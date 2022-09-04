@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   <GenerateRuntimeScript>True</GenerateRuntimeScript>
+  <UserSecretsId>3c03a2f6-23be-410e-a0c9-3ddb34f0c6b5</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

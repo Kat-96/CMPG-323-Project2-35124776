@@ -29,6 +29,7 @@ namespace CMPG323_API_PROJECT2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
             services.AddSwaggerGen(Options => { Options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "CMPG323_API_PROJECT2", Version = "v2", Description = "CMPG323 API for Project2" }); });
         }
 

@@ -81,3 +81,10 @@ namespace CMPG323_API_PROJECT2.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }
+
+namespace CMPG323_API_PROJECT2
+{
+    class ProductsDbContext
+    {
+    }
+}
