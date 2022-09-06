@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/zvMkceOyOQSzWfRvPB6P7YJgguvY/7ygKKk0HwPmSxvK4J3ibjCK14Tgv+uoe8EyzxAGJq+lQnLXYj33iGuAQ==",
+  "dgSpecHash": "5+Q0oKl+9JTQ9HD/xKZGewzpozYhWp0ekUd+HD7EtITWRFNA0EAV2JDyH5le3hIfbK4Mptf5GQGOfF8m50sZWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\CMPG323_PROJECT2\\CMPG-323-Project2-35124776\\CMPG323_API_PROJECT2\\CMPG323_API_PROJECT2.csproj",
   "expectedPackageFiles": [
@@ -41,8 +41,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.28\\microsoft.entityframeworkcore.analyzers.3.1.28.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.28\\microsoft.entityframeworkcore.design.3.1.28.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.28\\microsoft.entityframeworkcore.relational.3.1.28.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.25\\microsoft.entityframeworkcore.sqlserver.3.1.25.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.25\\microsoft.entityframeworkcore.tools.3.1.25.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.28\\microsoft.entityframeworkcore.sqlserver.3.1.28.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.28\\microsoft.entityframeworkcore.tools.3.1.28.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.28\\microsoft.extensions.caching.abstractions.3.1.28.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.28\\microsoft.extensions.caching.memory.3.1.28.nupkg.sha512",

@@ -1,4 +1,6 @@
-﻿using System;
+﻿//using CMPG323_API_PROJECT2.ApplicationUser;
+using System;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -8,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace CMPG323_API_PROJECT2.Models
 {
-    public partial class ConnectedOfficeContext : DbContext
+    public partial class ConnectedOfficeContext : IdentityDbContext<Authentication.ApplicationUser>
     {
         public ConnectedOfficeContext()
         {
@@ -28,12 +30,13 @@ namespace CMPG323_API_PROJECT2.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=tcp:kat1cmpg323.database.windows.net,1433;Initial Catalog=ConnectedOffice;Persist Security Info=False;User ID=Katlego;Password=Bingwa@71;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer("name=ConnectionStrings:Constr");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.Property(e => e.CategoryId)
@@ -76,6 +79,7 @@ namespace CMPG323_API_PROJECT2.Models
             });
 
             OnModelCreatingPartial(modelBuilder);
+            base.OnModelCreating(modelBuilder);
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

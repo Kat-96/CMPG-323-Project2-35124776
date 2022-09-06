@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CMPG323_API_PROJECT2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CMPG323_API_PROJECT2.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ZonesController : ControllerBase

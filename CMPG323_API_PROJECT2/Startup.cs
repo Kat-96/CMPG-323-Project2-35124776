@@ -73,7 +73,7 @@ namespace CMPG323_API_PROJECT2
                 };
             });
 
-
+            
             //services.AddSwaggerGen(Options => { Options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "CMPG323_API_PROJECT2", Version = "v2", Description = "CMPG323 API for Project2" }); });
 
             services.AddSwaggerGen(c => {
