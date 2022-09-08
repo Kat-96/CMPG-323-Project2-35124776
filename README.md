@@ -356,3 +356,37 @@ The API will contain at least one get, post, patch and delete method per resourc
          date: Thu,08 Sep 2022 13:32:57 GMT 
          server: Microsoft-IIS/10.0 
          x-powered-by: ASP.NET 
+
+## Reference List
+
+https://stackoverflow.com/questions/31453495/how-to-read-appsettings-values-from-a-json-file-in-asp-net-core
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio
+https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0
+https://dotnettutorials.net/lesson/authentication-and-authorization-in-web-api/
+https://www.c-sharpcorner.com/article/basic-authentication-in-web-api/
+https://docs.microsoft.com/en-us/learn/modules/build-web-api-aspnet-core/
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-3.1
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/authentication-and-authorization-in-aspnet-web-api
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-3.1
+https://stackoverflow.com/questions/14171794/how-to-retrieve-data-from-a-sql-server-database-in-c
+https://procodeguide.com/programming/entity-framework-core-in-asp-net-core/
+https://jd-bots.com/2022/01/24/join-two-entities-in-net-core-using-lambda-and-entity-framework-core/
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-api-management-using-vs?view=aspnetcore-6.0
+http://thejpanda.com/2020/08/10/python-automating-asp-net-core-web-api-creation-that-communicates-with-your-database-in-60-seconds-or-less/
+https://www.c-sharpcorner.com/article/how-to-retrieve-data-from-database-in-asp-net-web-api-using-jquery/
+ASP.NET Core - EF Core Migrations for Multiple Databases (SQLite and SQL Server) | Jason Watmore's Blog
+
+https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-6.0&tabs=visual-studio
+
+https://docs.microsoft.com/en-us/training/paths/create-microservices-with-dotnet/
+https://docs.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/
+
+https://docs.microsoft.com/en-us/certifications/azure-fundamentals/
+
+https://code-maze.com/swagger-ui-asp-net-core-web-api/
+
+https://docs.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/8-exercise-implement-crud
+https://entityframeworkcore.com/knowledge-base/41411384/how-to-inject-dbcontext-instance-in-the-configureservices-method-of-startup-cs-correctly--asp-net-core-1-1--
+ 
+https://docs.microsoft.com/en-us/learn/modules/secure-aspnet-core-identity/
+
