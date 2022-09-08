@@ -1,6 +1,11 @@
 # CMPG-323-Project2-35124776
 ## API Development
-## Project Documentation
+
+### Project Documentation
+In this project I will be creating a CRUD RESTful API that will connect to a database storing IoT device data. 
+The API will contain at least one get, post, patch and delete method per resource.
+
+### List all endpoints and how the user would use them.
 
 ## Register to get User autherization
 ### Request Body
