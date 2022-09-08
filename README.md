@@ -1,5 +1,6 @@
 # CMPG-323-Project2-35124776
-API Development
+## API Development
+## Project Documentation
 
 ## Register to get User autherization
 ### Request Body
@@ -218,7 +219,7 @@ API Development
         }'
         
  ### Response
-         HTTP/1.1 404
+         HTTP/1.1 404 Not Found
          content-length: 133 
          content-type: application/problem+json; charset=utf-8 
          date: Thu,08 Sep 2022 12:48:20 GMT 
@@ -231,3 +232,60 @@ API Development
           "status": 404,
           "traceId": "|6c453d9b-468c03403118269e."
         }
+
+## Create a new Category entry
+
+## Retrieves all Category entries
+### Request
+        curl -X 'GET' \
+          'https://cmpg323appservice.azurewebsites.net/api/Categories' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNTY3ODkiLCJqdGkiOiI3NTA1NzI1OC0wZjg2LTQwNjAtYmUwMi03ZjgxMGY0NGY0ZDYiLCJleHAiOjE2NjI2NTQwOTcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.2hQApxBBAa1JcK35FVHTtNuiH_WADFlDgqwatG_ltEw'
+
+ ### Response
+         HTTP/1.1 200 OK
+         content-encoding: gzip 
+         content-length: 241 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 13:26:04 GMT 
+         server: Microsoft-IIS/10.0 
+         vary: Accept-Encoding 
+         x-powered-by: ASP.NET 
+  
+  
+## Retrieve one Category from the database based on the ID parsed through
+### Request
+        curl -X 'GET' \
+          'https://cmpg323appservice.azurewebsites.net/api/Categories/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNTY3ODkiLCJqdGkiOiI3NTA1NzI1OC0wZjg2LTQwNjAtYmUwMi03ZjgxMGY0NGY0ZDYiLCJleHAiOjE2NjI2NTQwOTcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.2hQApxBBAa1JcK35FVHTtNuiH_WADFlDgqwatG_ltEw'
+          
+ ### Response
+         HTTP/1.1 200 OK
+         content-encoding: gzip 
+         content-length: 238 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 13:28:28 GMT 
+         server: Microsoft-IIS/10.0 
+         vary: Accept-Encoding 
+         x-powered-by: ASP.NET 
+         
+## Update an existing Category
+### Request
+        curl -X 'PUT' \
+          'https://cmpg323appservice.azurewebsites.net/api/Categories/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
+          -H 'accept: */*' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNTY3ODkiLCJqdGkiOiI3NTA1NzI1OC0wZjg2LTQwNjAtYmUwMi03ZjgxMGY0NGY0ZDYiLCJleHAiOjE2NjI2NTQwOTcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.2hQApxBBAa1JcK35FVHTtNuiH_WADFlDgqwatG_ltEw' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "categoryName": "Tv",
+          "categoryDescription": "telecommunication medium for transmitting moving images and sound",
+          "dateCreated": "2022-09-08T13:31:33.384Z"
+        }'
+   
+### Response
+         HTTP/1.1 204
+         date: Thu,08 Sep 2022 13:32:57 GMT 
+         server: Microsoft-IIS/10.0 
+         x-powered-by: ASP.NET 
