@@ -21,7 +21,7 @@ API Development
      }
      
 ## User Login 
-### Request Body
+### Request
       curl -X 'POST' \
       'https://cmpg323appservice.azurewebsites.net/api/Authenticate/login' \
       -H 'accept: */*' \
@@ -60,7 +60,7 @@ API Development
       "dateCreated": "2022-09-08T11:08:40.758Z"
     }'
     
-  ## Response Headers  
+  ## Response  
     HTTP/1.1 200 OK
     content-length: 248 
     content-type: application/json; charset=utf-8 
@@ -70,24 +70,13 @@ API Development
     x-powered-by: ASP.NET 
 
 ## Retrieve one Device from the database based on the ID parsed through
-### Request Body       
+### Request       
        curl -X 'GET' \
       'https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
       -H 'accept: text/plain' \
       -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U'
 
-## Response Body
-      {
-      "deviceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "deviceName": "Laptop",
-      "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "status": "string",
-      "isActvie": true,
-      "dateCreated": "2022-09-08T11:08:40.757"
-    }
- 
-## Response Headers
+## Response
      HTTP/1.1 200 OK
      content-encoding: gzip 
      content-length: 261 
@@ -100,7 +89,7 @@ API Development
 ## POST method that will create a new Device entry
 
 ## update an existing Device entry
-### Request Body 
+### Request 
     curl -X 'PUT' \
       'https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
       -H 'accept: */*' \
@@ -115,7 +104,7 @@ API Development
       "isActvie": true,
       "dateCreated": "2022-09-08T11:49:28.223Z"
     }'
-## Response Headers
+## Response 
        HTTP/1.1 204 OK
        date: Thu,08 Sep 2022 11:49:36 GMT 
        server: Microsoft-IIS/10.0 
@@ -123,13 +112,13 @@ API Development
        
 ## Delete an existing Device entry
 
-### Request Body
+### Request
         curl -X 'DELETE' \
           'https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
           -H 'accept: text/plain' \
           -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U'
           
-## Response Headers
+## Response
          HTTP/1.1 200 OK
          content-encoding: gzip 
          content-length: 256 
@@ -138,3 +127,28 @@ API Development
          server: Microsoft-IIS/10.0 
          vary: Accept-Encoding 
          x-powered-by: ASP.NET 
+         
+ ## Retrieve all Zone entries
+ ### Request
+        curl -X 'POST' \
+          'https://cmpg323appservice.azurewebsites.net/api/Devices' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "deviceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "deviceName": "security light",
+          "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "status": "string",
+          "isActvie": true,
+          "dateCreated": "2022-09-08T12:01:24.152Z"
+        }'
+ ## Response
+     HTTP/1.1 201 OK
+     content-length: 256 
+     content-type: application/json; charset=utf-8 
+     date: Thu,08 Sep 2022 12:05:09 GMT 
+     location: https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6 
+     server: Microsoft-IIS/10.0 
+     x-powered-by: ASP.NET 
