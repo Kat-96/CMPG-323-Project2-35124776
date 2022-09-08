@@ -128,10 +128,78 @@ API Development
          vary: Accept-Encoding 
          x-powered-by: ASP.NET 
          
- ## Retrieve all Zone entries
+ ## Create a new Zone entry
  ### Request
-
- ## Response
+        curl -X 'POST' \
+          'https://cmpg323appservice.azurewebsites.net/api/Zones' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "zoneName": "Zone",
+          "zoneDescription": "string",
+          "dateCreated": "2022-09-08T12:19:52.935Z"
+        }
+ ### Response
+         HTTP/1.1 201 OK
+         content-length: 135 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 12:35:03 GMT 
+         location: https://cmpg323appservice.azurewebsites.net/api/Zones/3fa85f64-5717-4562-b3fc-2c963f66afa6 
+         server: Microsoft-IIS/10.0 
+         x-powered-by: ASP.NET 
  
+## Retrieve all Zone entries 
+#### Request
+        curl -X 'GET' \
+          'https://cmpg323appservice.azurewebsites.net/api/Zones' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U'
+
+### Response
+         HTTP/1.1 200 OK
+         content-encoding: gzip 
+         content-length: 239 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 12:38:47 GMT 
+         server: Microsoft-IIS/10.0 
+         vary: Accept-Encoding 
+         x-powered-by: ASP.NET
+ 
+
 ## Retrieve one Zone from the database based on the ID parsed through
+### Request 
+        curl -X 'GET' \
+          'https://cmpg323appservice.azurewebsites.net/api/Zones/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U'
+          
+ ### Response
+         HTTP/1.1 200 OK
+         content-encoding: gzip 
+         content-length: 236 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 12:41:59 GMT 
+         server: Microsoft-IIS/10.0 
+         vary: Accept-Encoding 
+         x-powered-by: ASP.NET 
+         
+## Delete an existing Zone entry on the database
 ### Request
+        curl -X 'DELETE' \
+          'https://cmpg323appservice.azurewebsites.net/api/Zones/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U'
+          
+### Response
+         HTTP/1.1 200 OK
+         content-encoding: gzip 
+         content-length: 236 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 12:44:25 GMT 
+         server: Microsoft-IIS/10.0 
+         vary: Accept-Encoding 
+         x-powered-by: ASP.NET 
+ 
+## Update an existing Zone entry
