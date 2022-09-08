@@ -1,8 +1,8 @@
 # CMPG-323-Project2-35124776
 API Development
 
-## Register to get autherization
-### 
+## Register to get User autherization
+### Request Body
     curl -X 'POST' \
       'https://cmpg323appservice.azurewebsites.net/api/Authenticate/register' \
       -H 'accept: */*' \
@@ -19,6 +19,9 @@ API Development
       "status": "Success",
       "message": "User created successfully!"
      }
+     
+## User Login 
+### Request Body
      
 ## GET method that retrieves all Device entries
 ### 
