@@ -48,6 +48,7 @@ The API will contain at least one get, post, patch and delete method per resourc
 ### Response
   ![Authorization_Response](https://user-images.githubusercontent.com/90704811/189106951-42e3a336-f70e-454b-981f-cecfc9e4c770.png)
 
+//Now the user has been authorized
 
 ## GET all Device entries
 ### Request Body
