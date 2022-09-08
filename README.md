@@ -39,7 +39,9 @@ API Development
     
 //COPY TOKEN 
 ## Authorize
-  Authorization_Response.png
+### Response
+  ![Authorization_Response](https://user-images.githubusercontent.com/90704811/189106951-42e3a336-f70e-454b-981f-cecfc9e4c770.png)
+
 
 ## GET method that retrieves all Device entries
 ### 
