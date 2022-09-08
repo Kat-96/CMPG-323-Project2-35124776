@@ -96,3 +96,45 @@ API Development
      server: Microsoft-IIS/10.0 
      vary: Accept-Encoding 
      x-powered-by: ASP.NET
+     
+## POST method that will create a new Device entry
+
+## update an existing Device entry
+### Request Body 
+    curl -X 'PUT' \
+      'https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
+      -H 'accept: */*' \
+      -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U' \
+      -H 'Content-Type: application/json' \
+      -d '{
+      "deviceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "deviceName": "string",
+      "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "status": "string",
+      "isActvie": true,
+      "dateCreated": "2022-09-08T11:49:28.223Z"
+    }'
+## Response Headers
+       HTTP/1.1 204 OK
+       date: Thu,08 Sep 2022 11:49:36 GMT 
+       server: Microsoft-IIS/10.0 
+       x-powered-by: ASP.NET 
+       
+## Delete an existing Device entry
+
+### Request Body
+        curl -X 'DELETE' \
+          'https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNDU2NzgiLCJqdGkiOiJlYWM0YWZhNS05MzQ2LTQ5ZTctODA0MC1kZjVlOTYxNmIyOGEiLCJleHAiOjE2NjI2NDUwODAsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.NYABV1eF-hKCI2759VTD4kUpQdYf81m4arfCaD__k9U'
+          
+## Response Headers
+         HTTP/1.1 200 OK
+         content-encoding: gzip 
+         content-length: 256 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 11:53:50 GMT 
+         server: Microsoft-IIS/10.0 
+         vary: Accept-Encoding 
+         x-powered-by: ASP.NET 
