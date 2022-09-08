@@ -374,6 +374,7 @@ https://jd-bots.com/2022/01/24/join-two-entities-in-net-core-using-lambda-and-en
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-api-management-using-vs?view=aspnetcore-6.0
 http://thejpanda.com/2020/08/10/python-automating-asp-net-core-web-api-creation-that-communicates-with-your-database-in-60-seconds-or-less/
 https://www.c-sharpcorner.com/article/how-to-retrieve-data-from-database-in-asp-net-web-api-using-jquery/
+
 ASP.NET Core - EF Core Migrations for Multiple Databases (SQLite and SQL Server) | Jason Watmore's Blog
 
 https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-6.0&tabs=visual-studio
