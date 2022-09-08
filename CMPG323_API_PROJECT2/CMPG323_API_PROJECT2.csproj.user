@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>CMPG323_API_PROJECT2.Models.ConnectedOfficeContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\Admin\Desktop\CMPG_323\CMPG-323-Project2-35124776\CMPG323_API_PROJECT2\Properties\PublishProfiles\Cmpg323AppService - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

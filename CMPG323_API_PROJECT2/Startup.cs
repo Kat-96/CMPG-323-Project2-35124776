@@ -111,8 +111,13 @@ namespace CMPG323_API_PROJECT2
             {
                 if (env.IsDevelopment())
                 {
-                    app.UseDeveloperExceptionPage();
+                    
                 }
+
+                
+                app.UseSwagger();
+                app.UseSwaggerUI(Options => Options.SwaggerEndpoint("/swagger/v2/swagger.json", "My CMPG323 API"));
+                app.UseDeveloperExceptionPage();
 
                 app.UseHttpsRedirection();
 
@@ -127,8 +132,7 @@ namespace CMPG323_API_PROJECT2
                     endpoints.MapControllers();
                 });
 
-                app.UseSwagger();
-                app.UseSwaggerUI(Options => Options.SwaggerEndpoint("/swagger/v2/swagger.json", "My CMPG323 API"));
+                
             }
         }
 }
