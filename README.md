@@ -86,7 +86,7 @@ API Development
      vary: Accept-Encoding 
      x-powered-by: ASP.NET
      
-## POST method that will create a new Device entry
+## Create a new Device entry
 
 ## update an existing Device entry
 ### Request 
