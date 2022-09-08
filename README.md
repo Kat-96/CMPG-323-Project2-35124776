@@ -94,7 +94,29 @@ The API will contain at least one get, post, patch and delete method per resourc
      x-powered-by: ASP.NET
      
 ## Create a new Device entry
-
+#### Response
+        curl -X 'POST' \
+          'https://cmpg323appservice.azurewebsites.net/api/Devices' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNTY3ODkiLCJqdGkiOiI3NTA1NzI1OC0wZjg2LTQwNjAtYmUwMi03ZjgxMGY0NGY0ZDYiLCJleHAiOjE2NjI2NTQwOTcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.2hQApxBBAa1JcK35FVHTtNuiH_WADFlDgqwatG_ltEw' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "deviceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "deviceName": "Phone",
+          "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "status": "string",
+          "isActvie": true,
+          "dateCreated": "2022-09-08T13:48:08.054Z"
+        }'
+#### Response
+     HTTP/1.1 200 OK
+     content-length: 132 
+     content-type: application/problem+json; charset=utf-8 
+     date: Thu,08 Sep 2022 13:48:23 GMT 
+     server: Microsoft-IIS/10.0 
+     x-powered-by: ASP.NET 
+     
 ## update an existing Device entry
 #### Request 
     curl -X 'PUT' \
@@ -136,6 +158,26 @@ The API will contain at least one get, post, patch and delete method per resourc
          x-powered-by: ASP.NET 
          
  ## Create a new Zone entry
+ #### Request
+         curl -X 'POST' \
+          'https://cmpg323appservice.azurewebsites.net/api/Zones' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNTY3ODkiLCJqdGkiOiI3NTA1NzI1OC0wZjg2LTQwNjAtYmUwMi03ZjgxMGY0NGY0ZDYiLCJleHAiOjE2NjI2NTQwOTcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.2hQApxBBAa1JcK35FVHTtNuiH_WADFlDgqwatG_ltEw' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "zoneName": "first floor",
+          "zoneDescription": "Room",
+          "dateCreated": "2022-09-08T13:49:58.924Z"
+        }'
+#### Response 
+         HTTP/1.1 201 OK
+         content-length: 140 
+         content-type: application/json; charset=utf-8 
+         date: Thu,08 Sep 2022 13:50:27 GMT 
+         location: https://cmpg323appservice.azurewebsites.net/api/Zones/3fa85f64-5717-4562-b3fc-2c963f66afa6 
+         server: Microsoft-IIS/10.0 
+         x-powered-by: ASP.NET 
 #### Request
         curl -X 'POST' \
           'https://cmpg323appservice.azurewebsites.net/api/Zones' \
@@ -240,7 +282,26 @@ The API will contain at least one get, post, patch and delete method per resourc
         }
 
 ## Create a new Category entry
-
+#### Request
+        curl -X 'POST' \
+          'https://cmpg323appservice.azurewebsites.net/api/Categories' \
+          -H 'accept: text/plain' \
+          -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMTIzNTY3ODkiLCJqdGkiOiI3NTA1NzI1OC0wZjg2LTQwNjAtYmUwMi03ZjgxMGY0NGY0ZDYiLCJleHAiOjE2NjI2NTQwOTcsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjE5NTUiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjQyMDAifQ.2hQApxBBAa1JcK35FVHTtNuiH_WADFlDgqwatG_ltEw' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "categoryName": "Tv",
+          "categoryDescription": "string",
+          "dateCreated": "2022-09-08T13:24:25.756Z"
+        }'
+ #### Response
+          HTTP/1.1 200 OK
+          content-length: 132 
+         content-type: application/problem+json; charset=utf-8 
+         date: Thu,08 Sep 2022 13:24:37 GMT 
+         server: Microsoft-IIS/10.0 
+         x-powered-by: ASP.NET 
+         
 ## Retrieves all Category entries
 #### Request
         curl -X 'GET' \
