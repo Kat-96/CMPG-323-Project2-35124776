@@ -38,6 +38,8 @@ API Development
     }
     
 //COPY TOKEN 
+## Authorize
+  Authorization_Response.png
 
 ## GET method that retrieves all Device entries
 ### 
