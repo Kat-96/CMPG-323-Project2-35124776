@@ -60,16 +60,14 @@ API Development
       "dateCreated": "2022-09-08T11:08:40.758Z"
     }'
     
- ## Response
-    {
-      "deviceId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "deviceName": "Laptop",
-      "categoryId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "zoneId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-      "status": "string",
-      "isActvie": true,
-      "dateCreated": "2022-09-08T11:08:40.758Z"
-    }
+  ## Response Headers  
+    HTTP/1.1 200 OK
+    content-length: 248 
+    content-type: application/json; charset=utf-8 
+    date: Thu,08 Sep 2022 11:09:13 GMT 
+    location: https://cmpg323appservice.azurewebsites.net/api/Devices/3fa85f64-5717-4562-b3fc-2c963f66afa6 
+    server: Microsoft-IIS/10.0 
+    x-powered-by: ASP.NET 
 
 ## Retrieve one Device from the database based on the ID parsed through
 ### Request Body       
@@ -90,7 +88,8 @@ API Development
     }
  
 ## Response Headers
-     ontent-encoding: gzip 
+     HTTP/1.1 200 OK
+     content-encoding: gzip 
      content-length: 261 
      content-type: application/json; charset=utf-8 
      date: Thu,08 Sep 2022 11:27:47 GMT 
