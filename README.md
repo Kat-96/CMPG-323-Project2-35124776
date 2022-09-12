@@ -357,3 +357,5 @@ The API will contain at least one get, post, patch and delete method per resourc
          server: Microsoft-IIS/10.0 
          x-powered-by: ASP.NET 
 
+## Screenshot of my API EndPoints 
+![API_MANAGEMENT](https://user-images.githubusercontent.com/90704811/189646362-63a5ae28-a95a-432a-b784-cf10ab40ae72.png)
